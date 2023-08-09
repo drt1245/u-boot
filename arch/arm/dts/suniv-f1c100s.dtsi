@@ -209,6 +209,12 @@
 			};
 
 			/omit-if-no-ref/
+			uart0_pc_pins: uart0-pc-pins {
+				pins = "PC3";
+				function = "uart0";
+			};
+
+			/omit-if-no-ref/
 			uart1_pa_pins: uart1-pa-pins {
 				pins = "PA2", "PA3";
 				function = "uart1";

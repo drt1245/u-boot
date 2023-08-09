@@ -243,6 +243,8 @@ static const struct sunxi_pinctrl_function suniv_f1c100s_pinctrl_functions[] = {
 	{ "spi0",	2 },	/* PC0-PC3 */
 #if IS_ENABLED(CONFIG_UART0_PORT_F)
 	{ "uart0",	3 },	/* PF2-PF4 */
+#elif IS_ENABLED(CONFIG_UART0_PORT_C)
+	{ "uart0",	3 },	/* PC3, tx-only */
 #else
 	{ "uart0",	5 },	/* PE0-PE1 */
 #endif
